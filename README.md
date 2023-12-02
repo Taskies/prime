@@ -1,43 +1,20 @@
-MIME Type File Renamer
+Prime Number Finder in C++
+Project Description
+This repository contains a C++ application designed to efficiently find prime numbers using multithreading. The application showcases both the power of C++ in handling computation-intensive tasks and the utility of concurrent programming for performance optimization.
 
-Automatically rename files in a directory based on their MIME types. Perfect for organizing and labeling miscellaneous files with the correct extensions. Powered by the magic library.
+Key Features
+- Multithreaded Design: Utilizes the multithreading capabilities of C++ to divide the workload among multiple threads, enabling faster computation by leveraging multi-core processors.
 
-Features
+- Efficient Prime Number Checking: Implements a basic yet effective algorithm for checking prime numbers. The program excludes even numbers (except 2) and only checks up to the square root of each number to minimize unnecessary computations.
 
-- Detects the MIME type of each file in the specified directory.
-- Renames files to have the appropriate file extension based on their MIME type.
-- Generates a log of processed files, detailing changes made and any encountered errors.
+- Dynamic Thread Allocation: The number of threads spawned is dynamically determined based on the hardware's concurrency level, ensuring optimal use of available resources.
 
-Prerequisites
+- Synchronized Output: Uses mutexes to manage concurrent access to the standard output, ensuring that the prime numbers are printed in an orderly manner without interference between threads.
 
-Before you begin, ensure you have met the following requirements:
+- Endless Execution: The program is designed to continuously search for prime numbers, demonstrating an ongoing process of computation. Users can manually stop the execution as per their needs.
 
-    Python 3.x
-    magic library
+- One minute "benchmark" run. To extablish dominance over your nephews' puny CPU's. 
 
-You can install the required library using pip:
-
-```bash
-pip install magic-python
-```
-
-Clone the repository:
-
-```bash
-git clone https://github.com/Taskies/ExtensionFromMIME
-cd ExtensionFromMIME
-```
-Run the script:
-
-```bash
-python mime_rename.py
-```
-When prompted, enter the path to the directory you wish to scan and rename files.
-Example:
-
-```bash
-/media/where/your/folder/lives
-```
 
 Compilation and Execution Instructions for C++ Script
 For Debian-Based Linux
